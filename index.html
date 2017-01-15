@@ -1,12 +1,14 @@
-<!doctype html>
 <html>
 
-<head><!--
- 
-<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<head>
+<!--
+<link rel="stylesheet" type="text/css" href="style.css" />
 -->
- <style type="text/css">
-   #menu li {
+<title> Bitsurance </title>
+<script src = 'jquery-3.1.1.min.js'></script>
+<script src = 'expander.js'></script>
+<style type="text/css">
+#menu li {
 list-style-type:none;
 display:inline;	
 font-size: 32px;
@@ -88,9 +90,9 @@ ul#menu li {
   */
   background-color:#253b69;
  
-		padding:1px;
+		
 		width:100%;
-		border-radius:5px;
+		border-width:0px;
 		text-align:right;
 	
 }
@@ -100,15 +102,20 @@ ul {
 	
 	
 }
-.current {	
+.current {
+	
 	color:#253b69;
-	background-color:#253b69;	
+	background-color:#253b69;
+	
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h1 {
-	font-size: 48px;	
-  color:white; 
-  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
+	font-size: 48px;
+	
+  color:white;
+  
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  
 }
 p {
 	font-size: 18px;
@@ -121,39 +128,68 @@ article{
 	float:right;
 }
 #title {
-	position: 15% 25%;	
+	position: 15% 25%;
+	
 	width:25%;
 	position: absolute;
 	left:23%;
 	height:15%;
 	top:27.5%;
-	 }
+	
+}
+#foot{
+	position:absolute;
+	top:100%;
+	color:black;
+	
+	width:100%;
+	 background: #gray;
+  background: -webkit-linear-gradient(#FF4E50, #F9D423);
+  background:    -moz-linear-gradient(#FF4E50, #F9D423);
+  background:         linear-gradient(#FF4E50, #F9D423);
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  
+}
 #stuff {
+
 position:relative;
 top:9%;	
+}
+#last {
+	
 }
 #header {
 	font-size:36px;
 	 background-color:#253b69;
 	 color:white;
 	 padding:3px;
+	 /*
+	 -moz-border-radius: 50px/100px;
+	
+	-webkit-border-radius: 50px/100px;
+	 border-radius:50px/100px;
+	 */
 	 border-radius:66%;
 	}
+
 #bottomright{
 float:right;	
 color:white;
-width:100%;	
-	background-color:#253b69;
-	width:40%;
-	height:50%;
-	display:inline;	
-}
-#bottomleft
-{
+width:100%;
+	
 	background-color:#253b69;
 	width:40%;
 	height:50%;
 	display:inline;
+	
+}
+#bottomleft
+{
+		background-color:#253b69;
+	width:40%;
+	height:50%;
+	display:inline;
+	
 	float:left;
 }
 section{
@@ -161,34 +197,51 @@ section{
 	background-color:#253b69;
 	float:left;
 	width:50%;
-	height:45%;
+	height:50%;
 	margin:0px;
 	text-align:center;
 }
 .list {
 	color:white;
 	text-align:left;
+	font-size: 18px;
 }
-  </style>
-<title> Bitsurance </title>
-<script src = 'jquery-3.1.1.min.js'></script>
-<script src = 'expander.js'></script>
+</style>
+
 </head>
+
+
 <article>
+
+
 <div id="pic">
+
 </div>
+
 </article>
 <article id="writing">
+
+
 </article>
+
+
+
+
+
+
 <div class"table">
 <div id="menu">
 <ul>
 <li >
 <a class="current" href="index.html"> Home  </a>
+
 </li>
+
 <li>
 <a  href="info.html"> Info  </a>
+
 </li>
+
 <li>
 <a  href="rates.html">  Rates  </a>
 
@@ -204,7 +257,8 @@ section{
 </div>
 <div id="back">
 <p id="stuff" >
-s
+THis is is siisisisisisisis
+sisiisisisisisis
 siisisisisissi
 </p>
  
@@ -212,13 +266,40 @@ siisisisisissi
 <button id='header'>
 Our Mission
 </button>
+
 </div>
 </div>
+
+
+
+
 <body>
+
+
+
 <section id="footleft">
-<h1>Our Mission
+<h1>Company Profile
 </h1>
+<p >
+We are developing a Bitcoin insurance policy for customers who invest in bitcoin exchanges 
+which have been know to be vulnerable to hacking. According to Tyler Moore, an assistant
+ cyber security professor at the University of Tulsa’s Tandy School of Computer Science, 
+ 33% of stock exchanges have been infiltrated, and as Bitcoin gains awareness it becomes
+ larger target for attack. Many trusted Bitcoin exchanges have been hacked such as Mt. 
+ Gox(450 million USD sustained losses) and more recently Bitfinex(72 million USD 
+ sustained losses)  and were unable to properly reimburse customers. We sought a way to
+ make these exchanges more secure for customers and created Bitsurance. A cross-analysis 
+ of past breaches in current bitcoin exchanges and categorization of security risk each 
+ exchange gives an informed way to detect potentially unstable exchanges. A mathematical
+ Algorithm based on the probability of malicious hacking multiplied by the average losses 
+ expected calculates our rates. Premiums and monthly payment plans are then set for each of 
+ the major exchanges available for our customers. We look to bring trust and more confidence
+ in investing in the evolutionary Bitcoin currency and wish to provide our customers with 
+ the utmost service.
+</p>
+
 </section>
+
 <section id="footright">
 <h1>
 Further Readings
@@ -261,6 +342,18 @@ Bitcoin News: The number of exchanges hacked this year may surprise you </a>
 > Bloomberg: Hacked Bitcoin Exchange Users to Lose 36% </a>
 </li>
 <ul>
-</section>
+</section  >
+
+
+
+
+
+
+
+
 </body>
+
+
+
+
 </html>
