@@ -1,0 +1,126 @@
+  <!doctype html>
+  <html>
+  <head>
+    <meta charset = "UTF-8">
+    <script src = "jquery-3.1.1.min.js"></script>
+    <script src = "expander.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#click").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#slide2").offset().top
+                }, 2000);
+            });
+        });
+    </script>
+    <style type-"text/css">
+        #header{
+          padding-top:70px;
+          border-style:solid;
+          margin-left:0;
+        }
+        body{
+          margin:0px;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        #content{
+          position:relative;
+          background-color:#f0f0f0;
+        }
+        #overlay{
+          position:absolute;
+          left:0;
+          top:0;
+          height:100%;
+          background:rgba(108,142,191,0.8);
+          width:100%;
+        }
+        #ratepic img{
+          display:block;
+          margin:auto;
+        }
+        #picwrapper{
+          position:relative;
+          top:43%;
+        }
+        #slide2{
+          height:100vh;
+          text-align:center;
+        }
+        h1{
+          margin:auto;
+          width:100%;
+          color:white;
+          background-color:#253B69;
+          border-style:solid none;
+          border-width:10px;
+          border-color:rgba(108,142,191,.8);
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        h2{
+          margin-left:100px;
+          margin-right:100px;
+          color:#253B69;
+          border-bottom-style:solid;
+          border-width:5px;
+          border-color:gold;
+        }
+        .rate{
+          float:left;
+          width:25%;
+          border-left-style:solid;
+          border-width:5px;
+          border-color:gold;
+          height:400px;
+        }
+        #click {
+          background-color: rgba(108,142,191,.0);
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <div id = "header"></div>
+    <div id = "content" width=100% height=100%>
+      <div id = "slide1" width=100% height=100%>
+        <img id = "pic" src='stockbackgrnd.png' alt="background" width=100%>
+        <div id='overlay' style='text-align:center'>
+          <div id='picwrapper'>
+            <button type='submit' id = 'click'>
+                <img id ='ratepic' src = 'OurRatesH.png' alt='ourrates' height=90px>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id='slide2'>
+      <h1>Flat Rates</h1>
+      <div style="height:60px"></div>
+      <section style="float:left;height:400px;width:12.5%;"></section>
+      <section class = "rate">
+        <h2>Rate 1</h2>
+        <p><br>$10 monthly fee
+        <br><br><br>Covers up to $50 in exchange losses</p>
+      </section>
+      <section class = "rate">
+        <h2>Rate 2</h2>
+        <p><br>$30 monthly fee
+        <br><br><br>Covers up to $200 in exchange losses</p>
+      </section>
+      <section class = "rate" style="border-right-style:solid">
+        <h2>Rate 3</h2>
+        <p><br>$50 monthly fee
+        <br><br><br>Covers up to $500 in exchange losses</p>
+      </section>
+    </div>
+  </body>
+  </html>
